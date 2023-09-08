@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'HeirofLight';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HeirofLight';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.ttf') format("truetype");
+  font-display: swap;
+}
+
+* {
+  font-family: 'HeirofLight';
+}
+
+.hidden {
+  display: none;
+}
+
+.reverse {
+  filter: invert(100%);
+}
+
+.submits {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.xo {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 400px;
+  color: crimson;
+  z-index: 1001;
+}
+
+#purify {
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: blink 2s ease-in-out infinite alternate;
+  -moz-animation: blink 2s ease-in-out infinite alternate;
+  animation: blink 2s ease-in-out infinite alternate;
+}
+
+.firstScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.textbox {
+  position: absolute;
+  top: 385px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.name {
+  position: absolute;
+  top: 17%;
+  left: 30.5%;
+  color: aliceblue;
+  transform: translate(-50%, -50%);
+}
+
+.conv {
+  position: absolute;
+  top: 55%;
+  left: 50px;
+  color: black;
+  transform: translate(0%, -50%);
+  width: 380px;
+  word-break: keep-all;
+  text-align: left;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+#sign,
+.gaurd {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.dark {
+  filter: brightness(0%);
+}
+
+#sevensec {
+  font-size: 30px;
+  color: aliceblue;
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-box {
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  /* Firefox */
+  -webkit-animation: fadein 3s;
+  /* Safari and Chrome */
+  -o-animation: fadein 3s;
+  /* Opera */
+}
+
+.KoreanProblem {
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s;
+  /* Firefox */
+  -webkit-animation: fadein 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 0.5s;
+  /* Opera */
+}
+
+.EnglishProblem {
+  animation: fadeout 0.5s;
+  -moz-animation: fadeout 0.5s;
+  /* Firefox */
+  -webkit-animation: fadeout 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadeout 0.5s;
+  /* Opera */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-box {
+  animation: fadeout 3s;
+  -moz-animation: fadeout 3s;
+  /* Firefox */
+  -webkit-animation: fadeout 3s;
+  /* Safari and Chrome */
+  -o-animation: fadeout 3s;
+  /* Opera */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeout {
+
+  /* Firefox */
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeout {
+
+  /* Opera */
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
