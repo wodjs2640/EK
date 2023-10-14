@@ -1,150 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>English Kingdom</title>
-</head>
+  </head>
 
-<body>
-    <audio autoplay loop preload>
-        <source src="bgm.mp3" type="audio/mp3">
-    </audio>
+  <body>
+    <div id="back">
+      <img src="back.png" alt="" style="width: 1273px; height: 715.5px" />
+    </div>
+
     <p id="x" class="xo hidden fade-in-box">X</p>
     <p id="o" class="xo hidden fade-in-box">O</p>
 
     <div class="allTheScreen hidden">
-        <div class="textbox">
-            <img src="talkbox.png" id="allTheBox" alt="" style="width:500px">
-            <span class="conv" id="allTheText">변환 중...</span>
-            <span class="name">고파파</span>
-        </div>
+      <div class="textbox" style="top: 70%">
+        <img src="talkbox.png" id="allTheBox" alt="" style="width: 500px" />
+        <span class="conv" id="allTheText">변환 중...</span>
+        <span class="name">고파파</span>
+      </div>
     </div>
 
-    <img src="papago_og.png" alt="" id="papagoAnywhere" class="gaurd hidden"
-        style="width: 200px; left:30%; top:50%; z-index: 1000;">
+    <div
+      id="leftUp"
+      class="hidden"
+      style="width: 170px; height: 65px; background-color: green"
+    >
+      <img
+        src="plus.png"
+        id="plus"
+        alt=""
+        style="position: relative; width: 50px"
+      />
+      <span
+        id="counter"
+        style="background-color: white; height: 65px; font-size: 45px"
+      ></span>
+      <img
+        src="minus.png"
+        id="minus"
+        alt=""
+        style="position: relative; width: 50px; top: -10px"
+      />
+    </div>
+
+    <img
+      src="papago_og.png"
+      alt=""
+      id="papagoAnywhere"
+      class="gaurd hidden"
+      style="width: 200px; left: 30%; top: 50%; z-index: 1000"
+    />
 
     <div class="firstScreen">
-        <img id="poster" src="poster.png" alt="" style="width: 500px">
-        <p id="sevensec" class="hidden textbox">Touch to start!</p>
+      <img id="poster" src="poster.png" alt="" style="width: 500px" />
+      <p id="sevensec" class="hidden textbox" style="top: 70%">
+        Touch to start!
+      </p>
     </div>
 
     <div class="secondScreen background hidden">
-        <img src="intro.png" alt="" style="width:500px">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width:500px">
-            <span class="name">???</span>
-            <span class="hidden conv">안녕하세요 여러분.</span>
-            <span class="hidden conv">여러분들이 고 대장님을 구해주러 오신 용사분들이신가요?</span>
-            <span class="hidden conv">역시 맞으시군요. 저는 고 대장님의 부하 소능민이라고 합니다.</span>
-            <span class="hidden conv">지금 대장님은 앞에 있는 왕국 지하감옥에 갇혀계십니다.</span>
-            <span class="hidden conv">저도 구하러 가고 싶지만 이 왕국은 영어를 사용하지 않으면 즉시 사살되고, 저는 영어를 못해서...</span>
-            <span class="hidden conv">저를 대신해서 반드시 대장님을 구해주세요.</span>
-            <span class="hidden conv">앞에 있는 팻말을 읽으시면 바로 시작됩니다. 그럼 화이팅입니다. 선물은 영어가 위로 가게 놔주세요.</span>
-            <span class="hidden conv">무사하셔서 다행입니다!</span>
-            <span class="hidden conv">용사님들도 도와주셔서 정말 감사합니다.</span>
-            <span class="hidden conv">이제 이 왕국에 남아있는 영어의 잔재들을 지워야겠어. 할 일이 많겠군.</span>
-        </div>
+      <img src="intro.png" alt="" style="width: 500px" />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" />
+        <span class="name">???</span>
+        <span class="hidden conv">안녕하세요 여러분.</span>
+        <span class="hidden conv"
+          >여러분들이 고 대장님을 구해주러 오신 용사분들이신가요?</span
+        >
+        <span class="hidden conv"
+          >역시 맞으시군요. 저는 고 대장님의 부하 소능민이라고 합니다.</span
+        >
+        <span class="hidden conv"
+          >지금 대장님은 앞에 있는 왕국 지하감옥에 갇혀계십니다.</span
+        >
+        <span class="hidden conv"
+          >저도 구하러 가고 싶지만 이 왕국은 영어를 사용하지 않으면 즉시
+          사살되고, 저는 영어를 못해서...</span
+        >
+        <span class="hidden conv"
+          >저를 대신해서 반드시 대장님을 구해주세요.</span
+        >
+        <span class="hidden conv"
+          >앞에 있는 팻말을 읽으시면 바로 시작됩니다. 그럼 화이팅입니다.</span
+        >
+        <span class="hidden conv">무사하셔서 다행입니다!</span>
+        <span class="hidden conv">용사님들도 도와주셔서 정말 감사합니다.</span>
+        <span class="hidden conv"
+          >이제 이 왕국에 남아있는 영어의 잔재들을 지워야겠어. 할 일이
+          많겠군.</span
+        >
+      </div>
     </div>
+
     <div class="thirdScreen background hidden">
-        <img src="intro.png" alt="" style="width:500px">
-        <img src="sign.webp" id="sign" alt="" style="width:100px; left:70%">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width:500px" class="hidden">
-            <span class="name hidden">Sign</span>
-            <span class="hidden conv" style="font-size: 30px; text-align: center;">English Kingdom Rules</span>
-            <span class="hidden conv">1. English Only (No Korean, Japanese, Chinese, C language etc...)</span>
-            <span class="hidden conv">2. Not using English = Death = Add 10 minutes</span>
-            <span class="hidden conv">3. Don't get out of the room.</span>
-            <span class="hidden conv">4. Searching internet is allowed.</span>
-            <span class="hidden conv">5. The way to fight in this kingdom is to solve problems.</span>
-            <span class="hidden conv">6. Never go to prison.</span>
-            <span class="hidden conv">7. It is impossible to return to the previous screen. (Technical issue)</span>
-            <span class="hidden conv" style="font-size: 50px; text-align: center;">-FIN-</span>
-            <span class="hidden conv" style="font-size: 30px; text-align: center;">한글 왕국 규칙</span>
-            <span class="hidden conv">1. 한글만 사용 가능 (훈민정음 - 영어 포함 모든 외국어 외래어 금지)</span>
-            <span class="hidden conv">2. 특별히 고유명사는 사용 가능 (단, 고유명사에 외국어나 외래어 포함 시 금지)</span>
-            <span class="hidden conv">3. 한글 외 언어 사용 시 최종 시간에서 10분 추가</span>
-            <span class="hidden conv">4. 방에서 나가기 금지</span>
-            <span class="hidden conv">5. 검색 허용</span>
-            <span class="hidden conv">6. 이전 화면으로 돌아갈 수 없다 (기술적 한계)</span>
-            <span class="hidden conv" style="font-size: 50px; text-align: center;">-끝-</span>
-        </div>
+      <img src="intro.png" alt="" style="width: 500px" />
+      <img src="sign.webp" id="sign" alt="" style="width: 100px; left: 70%" />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden">Sign</span>
+        <span class="hidden conv" style="font-size: 30px; text-align: center"
+          >English Kingdom Rules</span
+        >
+        <span class="hidden conv"
+          >1. English Only (No Korean, Japanese, Chinese, C language
+          etc...)</span
+        >
+        <span class="hidden conv"
+          >2. Not using English = Death = Add 5 minutes</span
+        >
+        <span class="hidden conv" style="font-size: 20px"
+          >3. WRITE DOWN EVERY ANSWERS</span
+        >
+        <span class="hidden conv">4. Searching internet is allowed.</span>
+        <span class="hidden conv"
+          >5. The way to fight in this kingdom is to solve problems.</span
+        >
+        <span class="hidden conv">6. Never go to prison.</span>
+        <span class="hidden conv"
+          >7. It is impossible to return to the previous screen. (Technical
+          issue)</span
+        >
+        <span class="hidden conv" style="font-size: 50px; text-align: center"
+          >-FIN-</span
+        >
+        <span class="hidden conv" style="font-size: 30px; text-align: center"
+          >한글 왕국 규칙</span
+        >
+        <span class="hidden conv"
+          >1. 한글만 사용 가능 (훈민정음 - 영어 포함 모든 외국어 외래어
+          금지)</span
+        >
+        <span class="hidden conv"
+          >2. 특별히 고유명사는 사용 가능 (단, 고유명사에 외국어나 외래어 포함
+          시 금지)</span
+        >
+        <span class="hidden conv"
+          >3. 한글 외 언어 사용 시 최종 시간에서 5분 추가</span
+        >
+        <span class="hidden conv" style="font-size: 20px"
+          >4. 모든 답을 적어두자</span
+        >
+        <span class="hidden conv">5. 검색 허용</span>
+        <span class="hidden conv"
+          >6. 이전 화면으로 돌아갈 수 없다 (기술적 한계)</span
+        >
+        <span class="hidden conv" style="font-size: 50px; text-align: center"
+          >-끝-</span
+        >
+      </div>
     </div>
+
     <div class="forthScreen background hidden">
-        <img src="entrance.png" alt="" style="width:500px">
-        <img src="mainGaurd.png" id="mainGaurd" class="gaurd" alt="" style="width:150px; top:70%">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width:500px" class="hidden">
-            <span class="name hidden" style="font-size: 11px;">"Bat Castle"</span>
-            <span class="conv hidden">Who are you?</span>
-            <span class="conv hidden">You can't pass here until you solve this problem.</span>
-            <span class="conv hidden">정신 차려라 이 녀석!</span>
-            <span class="conv hidden">여긴 어디지...?</span>
-        </div>
+      <img src="entrance.png" alt="" style="width: 500px" />
+      <img
+        src="mainGaurd.png"
+        id="mainGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 150px; top: 70%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px">"Bat Castle"</span>
+        <span class="conv hidden">Who are you?</span>
+        <span class="conv hidden"
+          >You can't pass here until you solve this problem.</span
+        >
+        <span class="conv hidden">정신 차려라 이 녀석!</span>
+        <span class="conv hidden">여긴 어디지...?</span>
+        <span class="conv hidden">헉 대장님..!</span>
+        <span class="conv hidden">난 정화를 해야해서 이만</span>
+      </div>
     </div>
     <div class="englishFour background hidden">
-        <img src="FourEnglish.png" id="englishFour" alt="" style="width:500px">
-        <form id="answerFour" class="submits">
-            <input type="text" id="inputFour" autocomplete="off" placeholder="Type your Answer" required>
-            <button type="submit" id="submitFour">Submit</button>
-        </form>
+      <img
+        src="FourEnglish.png"
+        class="problem"
+        id="englishFour"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerFour" class="submits">
+        <input
+          type="text"
+          id="inputFour"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitFour">Submit</button>
+      </form>
     </div>
+
     <div class="fifthScreen background hidden">
-        <img src="forkedRoad.png" alt="" style="width: 500px;">
-        <img src="secondGaurd.png" id="fifthGaurd" class="gaurd" alt="" style="width: 150px; top: 60%; left: 60%;">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width: 500px;" class="hidden">
-            <span class="name hidden" style="font-size: 11px;">"Sspace"</span>
-            <span class="conv hidden">How did you get here?</span>
-            <span class="conv hidden">Still you can't pass here until you solve this problem.</span>
-        </div>
+      <img src="forkedRoad.png" alt="" style="width: 500px" />
+      <img
+        src="secondGaurd.png"
+        id="fifthGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 150px; top: 60%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px">"Sspace"</span>
+        <span class="conv hidden">How did you get here?</span>
+        <span class="conv hidden"
+          >Still you can't pass here until you solve this problem.</span
+        >
+        <span class="conv hidden">정신차려!</span>
+        <span class="conv hidden">소리 지르는 니가!</span>
+        <span class="conv hidden">닥치고 정화나 도와!</span>
+      </div>
     </div>
     <div class="englishFive background hidden">
-        <img src="FiveEnglish.png" id="englishFive" alt="" style="width:500px">
-        <form id="answerFive" class="submits">
-            <input type="text" id="inputFive" autocomplete="off" placeholder="Type your Answer" required>
-            <button type="submit" id="submitFive">Submit</button>
-        </form>
+      <img
+        src="FiveEnglish.png"
+        id="englishFive"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerFive" class="submits">
+        <input
+          type="text"
+          id="inputFive"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitFive">Submit</button>
+      </form>
     </div>
+
     <div class="sixthScreen background hidden">
-        <img src="insideFirst.png" alt="" style="width: 500px;">
-        <img src="sixthGaurd.png" id="sixthGaurd" class="gaurd" alt="" style="width: 150px;top: 60%; left: 60%;">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width: 500px;" class="hidden">
-            <span class="name hidden" style="font-size: 11px;">"Tiger Who Gave A Stick"</span>
-            <span class="conv hidden">You're pretty good at coming all the way here.</span>
-            <span class="conv hidden">But that's it.</span>
-        </div>
+      <img src="insideFirst.png" alt="" style="width: 500px" />
+      <img
+        src="sixthGaurd.png"
+        id="sixthGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 150px; top: 60%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px">"Three Stars"</span>
+        <span class="conv hidden"
+          >You're pretty good at coming all the way here.</span
+        >
+        <span class="conv hidden">But that's it.</span>
+        <span class="conv hidden">홍보 하지 말고 정신차려</span>
+        <span class="conv hidden">헉 맞다 달 찍어야 되는데</span>
+        <span class="conv hidden">......</span>
+      </div>
     </div>
     <div class="englishSix background hidden">
-        <img src="background.jpg" id="englishSix" alt="" style="width:500px">
-        <form id="answerSix" class="submits">
-            <input type="text" id="inputSix" autocomplete="off" placeholder="Type your Answer" required>
-            <button type="submit" id="submitSix">Submit</button>
-        </form>
+      <img
+        src="SixEnglish.png"
+        id="englishSix"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerSix" class="submits">
+        <input
+          type="text"
+          id="inputSix"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitSix">Submit</button>
+      </form>
     </div>
 
+    <div class="seventhScreen background hidden">
+      <img src="beforestair.png" alt="" style="width: 500px" />
+      <img
+        src="seventhGaurd.png"
+        id="seventhGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 150px; top: 60%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px">"Big Pay"</span>
+        <span class="conv hidden">Welcome here.</span>
+        <span class="conv hidden">This quiz will be not easy.</span>
+        <span class="conv hidden">뭐라는거야?</span>
+        <span class="conv hidden">불 좀 꺼줄래?</span>
+        <span class="conv hidden">...정화 끝나고 오락이나 하자.</span>
+      </div>
+    </div>
+    <div class="englishSeven background hidden">
+      <img
+        src="SevenEnglish.png"
+        id="englishSeven"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerSeven" class="submits">
+        <input
+          type="text"
+          id="inputSeven"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitSeven">Submit</button>
+      </form>
+    </div>
 
+    <div class="eighthScreen background hidden">
+      <img src="stairdown.png" alt="" style="width: 500px" />
+      <img
+        src="eighthGaurd.png"
+        id="eighthGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 150px; top: 60%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px"
+          >"Try Behind The Light"</span
+        >
+        <span class="conv hidden">Hey, do you want to pass here?</span>
+        <span class="conv hidden">It won't happen as long as I'm here.</span>
+        <span class="conv hidden">다들 타락했으면서 홍보는 열심히 하는군.</span>
+        <span class="conv hidden">군?</span>
+        <span class="conv hidden">...도망치죠.</span>
+      </div>
+    </div>
+    <div class="englishEight background hidden">
+      <img
+        src="EightEnglish.png"
+        id="englishEight"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerEight" class="submits">
+        <input
+          type="text"
+          id="inputEight"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitEight">Submit</button>
+      </form>
+    </div>
 
+    <div class="ninthScreen background hidden">
+      <img src="inDungeon.png" alt="" style="width: 500px" />
+      <img
+        src="ninthGaurd.png"
+        id="ninthGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 100px; top: 70%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px"
+          >"Tiger Who Gave A Stick"</span
+        >
+        <span class="conv hidden">I was just bored, but you're here.</span>
+        <span class="conv hidden">I need you to deal with my boredom.</span>
+        <span class="conv hidden">먹고 다닌다 자식아.</span>
+        <span class="conv hidden">오~ 너는 계획이 다 있구나?</span>
+        <span class="conv hidden">내 계획은 너랑 같이 정화하는거야.</span>
+      </div>
+    </div>
+    <div class="englishNine background hidden">
+      <img
+        src="NineEnglish.png"
+        id="englishNine"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerNine" class="submits">
+        <input
+          type="text"
+          id="inputNine"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitNine">Submit</button>
+      </form>
+    </div>
 
-
-
+    <div class="tenthScreen background hidden">
+      <img src="prison.png" alt="" style="width: 500px" />
+      <img
+        src="tenthGaurd.png"
+        id="tenthGaurd"
+        class="gaurd"
+        alt=""
+        style="width: 200px; top: 70%; left: 60%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px"
+          >"Ah Wake Up Language"</span
+        >
+        <span class="conv hidden">I've already heard a lot about you.</span>
+        <span class="conv hidden"
+          >It's great that you've come this far, but you can't go any
+          further.</span
+        >
+        <span class="conv hidden">미친건가? 정신차려!</span>
+        <span class="conv hidden">뚜 루루 뚜루 귀여운 뚜 루루 뚜루</span>
+        <span class="conv hidden">아직도 정신을 못차렸군. 그냥 갑시다.</span>
+      </div>
+    </div>
+    <div class="englishTen background hidden">
+      <img
+        src="TenEnglish.png"
+        id="englishTen"
+        class="problem"
+        alt=""
+        style="width: 500px"
+      />
+      <form id="answerTen" class="submits">
+        <input
+          type="text"
+          id="inputTen"
+          autocomplete="off"
+          placeholder="Type your Answer"
+          required
+        />
+        <button type="submit" id="submitTen">Submit</button>
+      </form>
+    </div>
 
     <div class="background lastScreen hidden">
-        <img src="prison.png" alt="" style="width: 500px;">
-        <img src="papago_og.png" id="papago" class="gaurd dark" alt="" style="width:200px; top:70%; left:50%">
-        <div class="textbox">
-            <img src="talkbox.png" alt="" style="width: 500px;" class="hidden">
-            <span class="name hidden" style="font-size: 11px;">???</span>
-            <span class="conv hidden">저를 구하러 여기까지 와주시다니 감사합니다.</span>
-            <span class="conv hidden">제 이름은 고파파, 외국에선 파파고라고 부르죠.</span>
-            <span class="conv hidden">이제 이 양물 먹은 왕국을 정화해야하는데, 혹시 저를 도와주실 수 있나요?</span>
-        </div>
+      <img src="prison.png" alt="" style="width: 500px" />
+      <img
+        src="papago_og.png"
+        id="papago"
+        class="gaurd dark"
+        alt=""
+        style="width: 200px; top: 70%; left: 50%"
+      />
+      <div class="textbox">
+        <img src="talkbox.png" alt="" style="width: 500px" class="hidden" />
+        <span class="name hidden" style="font-size: 11px">???</span>
+        <span class="conv hidden"
+          >저를 구하러 여기까지 와주시다니 감사합니다.</span
+        >
+        <span class="conv hidden"
+          >제 이름은 고파파, 외국에선 파파고라고 부르죠.</span
+        >
+        <span class="conv hidden"
+          >이제 이 양물 먹은 왕국을 정화해야하는데, 혹시 저를 도와주실 수
+          있나요?</span
+        >
+      </div>
     </div>
-    <p id="purify" class="hidden">-정화중입니다-</p>
+    <p
+      id="purify"
+      class="hidden"
+      style="color: aliceblue; border-color: orangered"
+    >
+      -정화중입니다-
+    </p>
+
+    <div class="background realLastScreen hidden">
+      <img src="board.png" alt="" style="width: 500px" />
+      <div
+        id="record"
+        style="
+          color: black;
+          text-shadow: -1px 0px white, 0px 1px white, 1px 0px white,
+            0px -1px white;
+          width: 500px;
+          text-align: center;
+        "
+      >
+        걸린 시간
+      </div>
+      <div
+        id="member"
+        class="textbox"
+        style="
+          font-size: 30px;
+          color: black;
+          text-shadow: -1px 0px white, 0px 1px white, 1px 0px white,
+            0px -1px white;
+          width: 500px;
+          text-align: center;
+          top: 70%;
+        "
+      >
+        <div>닉네임</div>
+        삐약, 우린물, 첼
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="chatTwo.js"></script>
@@ -152,8 +512,10 @@
     <script src="chatFour.js"></script>
     <script src="chatFive.js"></script>
     <script src="chatSix.js"></script>
+    <script src="chatSeven.js"></script>
+    <script src="chatEight.js"></script>
+    <script src="chatNine.js"></script>
+    <script src="chatTen.js"></script>
     <script src="chatLast.js"></script>
-
-</body>
-
+  </body>
 </html>

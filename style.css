@@ -1,29 +1,37 @@
 @font-face {
-  font-family: 'HeirofLight';
+  font-family: "HeirofLight";
   font-weight: 400;
   font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.ttf') format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightRegular.ttf")
+      format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HeirofLight';
+  font-family: "HeirofLight";
   font-weight: 700;
   font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff2') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.ttf') format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/heiroflight/HeirofLightBold.ttf")
+      format("truetype");
   font-display: swap;
 }
 
 * {
-  font-family: 'HeirofLight';
+  font-family: "HeirofLight";
 }
 
 .hidden {
@@ -43,7 +51,7 @@
 
 .xo {
   position: absolute;
-  top: -20%;
+  top: -10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 400px;
@@ -108,6 +116,14 @@
   /* Safari and Chrome */
   -o-animation: fadein 2s;
   /* Opera */
+}
+
+#record {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
 }
 
 #sign,
@@ -202,7 +218,6 @@
 }
 
 @-moz-keyframes fadein {
-
   /* Firefox */
   from {
     opacity: 0;
@@ -214,7 +229,6 @@
 }
 
 @-webkit-keyframes fadein {
-
   /* Safari and Chrome */
   from {
     opacity: 0;
@@ -226,7 +240,6 @@
 }
 
 @-o-keyframes fadein {
-
   /* Opera */
   from {
     opacity: 0;
@@ -259,7 +272,6 @@
 }
 
 @-moz-keyframes fadeout {
-
   /* Firefox */
   from {
     opacity: 1;
@@ -271,7 +283,6 @@
 }
 
 @-webkit-keyframes fadeout {
-
   /* Safari and Chrome */
   from {
     opacity: 1;
@@ -283,7 +294,6 @@
 }
 
 @-o-keyframes fadeout {
-
   /* Opera */
   from {
     opacity: 1;
@@ -292,4 +302,12 @@
   to {
     opacity: 0;
   }
+}
+
+#back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
 }
